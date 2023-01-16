@@ -188,16 +188,13 @@ body {
     align-items: self-end;
 }
 
-.about-us__info {
-    max-width: 475px;
-}
-
 .about-us__title {
     font-size: 45px;
     color: rgb(51, 25, 7);
     line-height: 1.222;
     margin-bottom: 60px;
     font-weight: 400;
+    max-width: 475px;
 }
 
 .about-us__description {
