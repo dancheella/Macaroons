@@ -86,6 +86,7 @@ body {
 .main {
     background-color: #eba8b1;
     padding: 126px 0 108px 0;
+    overflow: hidden
 }
 
 .main__container {
@@ -546,4 +547,12 @@ body {
 .present:hover .present__text {
     transform: translate(0, 0);
     opacity: 1;
+}
+
+.header__burger {
+    display: none;
+}
+
+.menu__close {
+    display: none;
 }
