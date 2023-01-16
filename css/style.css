@@ -144,18 +144,18 @@ body {
     z-index: 1;
 }
 
-/*.main__image::before,*/
-/*.main__image::after {*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    top: calc(50% - 100px);*/
-/*    left: calc(50% - 100px);*/
-/*    width: 200px;*/
-/*    height: 200px;*/
-/*    border: 1px solid #821328;*/
-/*    border-radius: 50%;*/
-/*    z-index: -1;*/
-/*}*/
+.main__image::before,
+.main__image::after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 200px;
+    border: 1px solid #821328;
+    border-radius: 50%;
+    z-index: -1;
+}
 
 .main__image::before {
     animation: pulse 3s infinite;
