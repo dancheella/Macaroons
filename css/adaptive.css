@@ -294,11 +294,16 @@
     }
 
     .main__image {
-        display: none;
+        width: 250px;
+        height: 207px;
     }
 
-    .main__action {
-        margin-bottom: 245px;
+    .main__image::before,
+    .main__image::after {
+        width: 100px;
+        height: 100px;
+        top: calc(50% - 50px);
+        left: calc(50% - 50px);
     }
 
     .about-us {
@@ -387,6 +392,21 @@
     .footer__right__hidden {
         display: block;
         order: 4;
+    }
+
+    .present__text {
+        width: 130px;
+        font-size: 12px;
+    }
+
+    .present__text::before {
+        border: 13px solid transparent;
+        border-left: 20px solid #770a1d;
+    }
+
+    .present__text::after {
+        border: 13px solid transparent;
+        border-left: 20px solid #feefee;
     }
 }
 

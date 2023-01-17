@@ -81,6 +81,7 @@ body {
     font-size: 16px;
     font-family: GilroyBold, sans-serif;
     color: rgb(255, 255, 255);
+    margin-left: 98px;
 }
 
 .main {
@@ -126,7 +127,7 @@ body {
     outline: none;
     font-family: GilroyBold, sans-serif;
     color: rgb(255, 255, 255);
-    border-radius: 25px;
+    border-radius: 30px;
 }
 
 .main__button {
@@ -338,6 +339,7 @@ body {
     font-size: 16px;
     width: 130px;
     height: 50px;
+    border-radius: 25px;
 }
 
 .order {
