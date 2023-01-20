@@ -494,6 +494,10 @@ body {
     color: rgb(227, 172, 180);
 }
 
+.footer__phone {
+    -webkit-text-fill-color: rgb(255, 255, 255);
+}
+
 .present {
     width: 90px;
     height: 90px;
