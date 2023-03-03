@@ -145,6 +145,10 @@
         top: 110px;
         right: 110px;
     }
+
+    .order-success {
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -437,6 +441,10 @@
     .order__form-text {
         font-size: 16px;
         line-height: 1.437;
+    }
+
+    .order-success {
+        font-size: 20px;
     }
 }
 

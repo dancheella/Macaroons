@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>MACAROONS</title>
-    <link rel="icon" href="images/favicon.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="icon" href="src/images/favicon.png">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/adaptive.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -15,7 +15,7 @@
 <header class="header">
     <div class="container header__container">
         <div class="logo">
-            <img src="images/logo.png" alt="Logo">
+            <img src="src/images/logo.png" alt="Logo">
         </div>
         <nav class="menu" id="menu">
             <div class="menu__close">
@@ -68,11 +68,11 @@
                 пироженками Macaroon!
             </div>
             <div class="main__action">
-                <button class="button main__button">Выбрать макарун</button>
+                <button class="button main__button" id="main__button">Выбрать макарун</button>
             </div>
         </div>
         <div class="main__image">
-            <img src="images/macaroons.png" alt="Macaroons" class="main__image-img">
+            <img src="src/images/macaroons.png" alt="Macaroons" class="main__image-img">
         </div>
     </div>
 </section>
@@ -87,7 +87,7 @@
             </div>
         </div>
         <div class="about-us__image">
-            <img src="images/macaroon.png" alt="Macaroon" class="about-us__image-img">
+            <img src="src/images/macaroon.png" alt="Macaroon" class="about-us__image-img">
         </div>
     </div>
 </section>
@@ -135,13 +135,13 @@
     </div>
 </section>
 
-<section class="products">
+<section class="products" id="products">
     <div class="container products__container">
         <h2 class="products__title">Выберите свой макарун</h2>
         <div class="products__items">
             <div class="product">
                 <div class="product__image">
-                    <img class="product__image-img" src="images/products__image/first.png" alt="Macaroon-first">
+                    <img class="product__image-img" src="src/images/products__image/first.png" alt="Macaroon-first">
                 </div>
                 <div class="product__title">Макарун с малиной</div>
                 <div class="product__action">
@@ -154,7 +154,7 @@
             </div>
             <div class="product">
                 <div class="product__image">
-                    <img class="product__image-img" src="images/products__image/second.png" alt="Macaroon-second">
+                    <img class="product__image-img" src="src/images/products__image/second.png" alt="Macaroon-second">
                 </div>
                 <div class="product__title">Макарун с манго</div>
                 <div class="product__action">
@@ -167,7 +167,7 @@
             </div>
             <div class="product">
                 <div class="product__image">
-                    <img class="product__image-img" src="images/products__image/third.png" alt="Macaroon-third">
+                    <img class="product__image-img" src="src/images/products__image/third.png" alt="Macaroon-third">
                 </div>
                 <div class="product__title">Пирог с ванилью</div>
                 <div class="product__action">
@@ -180,7 +180,7 @@
             </div>
             <div class="product">
                 <div class="product__image">
-                    <img class="product__image-img" src="images/products__image/fourth.png" alt="Macaroon-fourth">
+                    <img class="product__image-img" src="src/images/products__image/fourth.png" alt="Macaroon-fourth">
                 </div>
                 <div class="product__title">Пирог с фисташками</div>
                 <div class="product__action">
@@ -198,10 +198,10 @@
 <section class="order" id="order">
     <div class="container order__container">
         <div class="order__strawberry-left">
-            <img class="order__strawberry-left-img" src="images/strawberry-big.png" alt="Strawberry-big">
+            <img class="order__strawberry-left-img" src="src/images/strawberry-big.png" alt="Strawberry-big">
         </div>
         <div class="order__image">
-            <img class="order__image-img" src="images/macaroon_big.png" alt="Big-macaroon">
+            <img class="order__image-img" src="src/images/macaroon_big.png" alt="Big-macaroon">
         </div>
         <div class="order__form">
             <h2 class="order__form-title">Закажите макарун!</h2>
@@ -210,21 +210,26 @@
             </div>
             <h3 class="order__form-items">Ваш выбор</h3>
             <div class="order__input order__input-choice">
-                <input class="order__input_input" type="text" placeholder="Напишите, что хотите заказать...">
+                <input class="order__input_input" type="text" placeholder="Напишите, что хотите заказать..."
+                       id="order-macarons">
+                <div class="error-input">Введите ваш заказ</div>
             </div>
             <h3 class="order__form-items">Заполните данные для заказа</h3>
             <div class="order__input">
-                <input class="order__input_input" type="text" placeholder="Ваше имя">
+                <input class="order__input_input" type="text" placeholder="Ваше имя" id="name">
+                <div class="error-input">Введите ваше имя</div>
             </div>
             <div class="order__input">
-                <input class="order__input_input" type="text" placeholder="+375 (__) ___ - __ - __">
+                <input class="order__input_input" type="text" placeholder="+375 (__) ___ - __ - __" id="phone">
+                <div class="error-input">Введите ваш телефон</div>
             </div>
             <div class="order__button">
-                <button class="button order__button" type="button">Оформить заказ</button>
+                <button class="button order__button" type="button" id="order__button">Оформить заказ</button>
             </div>
         </div>
+        <div class="order-success" id="order-success"></div>
         <div class="order__strawberry-right">
-            <img class="order__strawberry-right-img" src="images/strawberry-small.png" alt="Strawberry-small">
+            <img class="order__strawberry-right-img" src="src/images/strawberry-small.png" alt="Strawberry-small">
         </div>
     </div>
 </section>
@@ -233,7 +238,7 @@
     <div class="container footer__container">
         <div class="footer__logo">
             <div class="logo">
-                <img src="images/logo.png" alt="Logo">
+                <img src="src/images/logo.png" alt="Logo">
             </div>
             <div class="footer__right">
                 Все права защищены, 2020
@@ -255,21 +260,28 @@
     </div>
 </footer>
 
-<div class="present">
-    <div class="present__text">Оформите заказ и получите подарок!</div>
-    <img class="present__image" src="images/present.png" alt="Present">
+<div class="loader">
+    <div class="loadingio-spinner-double-ring-328xkos4ist">
+        <div class="ldio-6xlizxe239x">
+            <div></div>
+            <div></div>
+            <div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<script>
-    document.getElementById('burger').onclick = function () {
-        document.getElementById('menu').classList.add('menu__open');
-    }
+<div class="present">
+    <div class="present__text">Оформите заказ и получите подарок!</div>
+    <img class="present__image" src="src/images/present.png" alt="Present">
+</div>
 
-    document.querySelectorAll('#menu *  ').forEach((item) => {
-        item.onclick = () => {
-            document.getElementById('menu').classList.remove('menu__open');
-        }
-    })
-</script>
+<script src="src/js/jquery-3.6.3.min.js"></script>
+<script src="src/js/jquery.maskedinput.min.js"></script>
+<script src="src/js/scripts.js"></script>
 
 </body>
