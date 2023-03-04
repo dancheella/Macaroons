@@ -1,13 +1,13 @@
 //burger menu
 $('#burger').click(function () {
     $('#menu').addClass('menu__open');
-})
+});
 
 $('#menu').each(function () {
     $('#menu').click(function () {
         $('#menu').removeClass('menu__open');
-    })
-})
+    });
+});
 
 //button
 $('#main__button').click(function () {
