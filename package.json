@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.6.3"
   },
+
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-concat-css": "^3.1.0",
