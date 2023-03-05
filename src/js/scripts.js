@@ -18,7 +18,6 @@ let orderMacarons = $('#order-macarons');
 let name = $('#name');
 let phone = $('#phone');
 let orderSuccess = $('#order-success');
-let orderInput = $('.order__input_input::placeholder')
 
 //очистка формы
 function resetForm() {
@@ -68,7 +67,6 @@ $('#order__button').click(function () {
     if (!orderMacarons.val()) {
         orderMacarons.next().show();
         orderMacarons.css('border-color', 'red');
-        orderInput.css('color', 'red');
         hasError = true;
         loader.hide();
     }
