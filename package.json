@@ -12,7 +12,6 @@
   "dependencies": {
     "gulp-less": "^5.0.0"
   },
-
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-concat-css": "^3.1.0",

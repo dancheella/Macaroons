@@ -24,7 +24,7 @@ function resetForm() {
     $('.order__form').remove();
     $('.order__strawberry-right-img').remove();
     $('.order__strawberry-left-img').remove();
-    orderSuccess.css('display', 'flex');
+    orderSuccess.css('display', 'flex', ' text-align', 'left');
     orderSuccess.text('Спасибо за Ваш заказ. Мы скоро свяжемся с Вами!');
 }
 
@@ -47,10 +47,10 @@ name.on('input', function () {
 //маска номера
 phone.mask("+375 (99) 999-99-99");
 
-//loader
+//Loader
 let loader = $('.loader');
 
-//валидация
+//Bалидация
 $('#order__button').click(function () {
 
     let hasError = false;
@@ -99,3 +99,12 @@ $('#order__button').click(function () {
             });
     }
 });
+
+//Year
+const currentYear = new Date().getFullYear();
+const yearElement = document.querySelector('.current-year');
+yearElement.textContent = currentYear.toString();
+
+const currentYearHidden = new Date().getFullYear();
+const yearElementHidden = document.querySelector('.current-year-hidden');
+yearElementHidden.textContent = currentYearHidden.toString();
